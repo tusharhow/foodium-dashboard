@@ -119,6 +119,24 @@ class RightSideBar extends StatelessWidget {
             count: 'x3',
             price: '\$9.79',
           ),
+          SizedBox(
+            height: defaultPadding * 2,
+          ),
+          Container(
+            height: 50,
+            width: 250,
+            decoration: BoxDecoration(
+                color: orangeColor, borderRadius: BorderRadius.circular(30)),
+            child: Center(
+              child: Text(
+                'Checkout',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
         ]),
       ),
     ));
