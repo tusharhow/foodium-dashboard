@@ -29,7 +29,7 @@ class HeaderSection extends StatelessWidget {
               ),
               hintStyle: TextStyle(color: Colors.black54),
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide.none,
               ),
             ),
@@ -39,4 +39,3 @@ class HeaderSection extends StatelessWidget {
     );
   }
 }
-

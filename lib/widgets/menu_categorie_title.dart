@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import '../constants.dart';
-
 
 class MenuCategorieTitile extends StatelessWidget {
   const MenuCategorieTitile({
@@ -13,8 +11,10 @@ class MenuCategorieTitile extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Menu Categorie',
-            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+        Text(
+          'Menu Categorie',
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        ),
         Container(
           height: 40,
           width: 110,
@@ -24,8 +24,10 @@ class MenuCategorieTitile extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('View all',
-                  style: TextStyle(fontSize: 13, color: Colors.white)),
+              Text(
+                'View all',
+                style: TextStyle(fontSize: 13, color: Colors.white),
+              ),
               Icon(
                 Icons.keyboard_arrow_down_rounded,
                 color: Colors.white,
@@ -37,4 +39,3 @@ class MenuCategorieTitile extends StatelessWidget {
     );
   }
 }
-
