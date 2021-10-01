@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodium_dashboard/constants.dart';
 import 'package:foodium_dashboard/widgets/categorie_items.dart';
 import 'package:foodium_dashboard/widgets/header_section.dart';
+import 'package:foodium_dashboard/widgets/home_banner.dart';
 import 'package:foodium_dashboard/widgets/menu_categorie_title.dart';
 
 class BodyMiddle extends StatelessWidget {
@@ -18,11 +19,10 @@ class BodyMiddle extends StatelessWidget {
           child: Column(
         children: [
           HeaderSection(),
-         
-            SizedBox(
-              height: defaultPadding * 2,
-            ),
-        
+          SizedBox(
+            height: defaultPadding * 2,
+          ),
+          HomeBanner(),
           SizedBox(
             height: defaultPadding * 2,
           ),
@@ -54,30 +54,27 @@ class BodyMiddle extends StatelessWidget {
                 iconColor: orangeColor,
                 labelColor: Colors.black,
               ),
-             
-                CategorieItems(
-                  imgSrc: 'images/choco.png',
-                  label: 'Taco',
-                  cardColor: Colors.white,
-                  iconColor: orangeColor,
-                  labelColor: Colors.black,
-                ),
-             
-                CategorieItems(
-                  imgSrc: 'images/popcorn.png',
-                  labelColor: Colors.black,
-                  label: 'Snack',
-                  cardColor: Colors.white,
-                  iconColor: orangeColor,
-                ),
-             
-                CategorieItems(
-                  imgSrc: 'images/soda.png',
-                  label: 'Drink',
-                  cardColor: Colors.white,
-                  iconColor: orangeColor,
-                  labelColor: Colors.black,
-                ),
+              CategorieItems(
+                imgSrc: 'images/choco.png',
+                label: 'Taco',
+                cardColor: Colors.white,
+                iconColor: orangeColor,
+                labelColor: Colors.black,
+              ),
+              CategorieItems(
+                imgSrc: 'images/popcorn.png',
+                labelColor: Colors.black,
+                label: 'Snack',
+                cardColor: Colors.white,
+                iconColor: orangeColor,
+              ),
+              CategorieItems(
+                imgSrc: 'images/soda.png',
+                label: 'Drink',
+                cardColor: Colors.white,
+                iconColor: orangeColor,
+                labelColor: Colors.black,
+              ),
             ],
           ),
           SizedBox(
@@ -91,18 +88,16 @@ class BodyMiddle extends StatelessWidget {
                 price: '\$7.49',
                 imgSrc: 'images/pizza_img1.png',
               ),
-             
-                MoreItems(
-                  label: 'Italian Pizza',
-                  price: '\$8.5',
-                  imgSrc: 'images/pizza_img2.png',
-                ),
-             
-                MoreItems(
-                  label: 'Sausage Pizza',
-                  price: '\$7.5',
-                  imgSrc: 'images/pizza_img3.png',
-                ),
+              MoreItems(
+                label: 'Italian Pizza',
+                price: '\$8.5',
+                imgSrc: 'images/pizza_img2.png',
+              ),
+              MoreItems(
+                label: 'Sausage Pizza',
+                price: '\$7.5',
+                imgSrc: 'images/pizza_img3.png',
+              ),
             ],
           )
         ],
