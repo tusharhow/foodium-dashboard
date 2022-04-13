@@ -10,7 +10,7 @@ class HeaderSection extends StatelessWidget {
     return Row(
       children: [
         Text(
-          'Today Menu 😋',
+          'Today' '\'s Menu 😋',
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
         Spacer(
@@ -21,13 +21,13 @@ class HeaderSection extends StatelessWidget {
             decoration: InputDecoration(
               focusedBorder: InputBorder.none,
               filled: true,
-              fillColor: Colors.white54,
-              hintText: 'Search',
+              fillColor: Colors.black12,
+              hintText: 'Search for a dish',
               suffixIcon: Icon(
                 Icons.search,
-                color: Colors.black54,
+                color: Colors.black26,
               ),
-              hintStyle: TextStyle(color: Colors.black54),
+              hintStyle: TextStyle(color: Colors.black26),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: BorderSide.none,

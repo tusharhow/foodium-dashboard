@@ -75,12 +75,17 @@ class RightSideBar extends StatelessWidget {
                   width: 100,
                   decoration: BoxDecoration(
                       color: orangeColor.withOpacity(0.88),
-                      borderRadius: BorderRadius.circular(10)),
+                      borderRadius: BorderRadius.circular(8)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text('View all',
-                          style: TextStyle(fontSize: 13, color: Colors.white)),
+                      Text(
+                        'View all',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: Colors.white,
+                        ),
+                      ),
                       Icon(
                         Icons.keyboard_arrow_down_rounded,
                         color: Colors.white,
@@ -119,20 +124,20 @@ class RightSideBar extends StatelessWidget {
             price: '\$9.79',
           ),
           SizedBox(
-            height: defaultPadding * 2,
+            height: defaultPadding * 3,
           ),
           Container(
             height: 50,
-            width: 250,
+            width: 230,
             decoration: BoxDecoration(
-                color: orangeColor, borderRadius: BorderRadius.circular(30)),
+                color: orangeColor, borderRadius: BorderRadius.circular(20)),
             child: Center(
               child: Text(
                 'Checkout',
                 style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
               ),
             ),
           ),
@@ -145,10 +150,10 @@ class RightSideBar extends StatelessWidget {
 class OrderMenuItems extends StatelessWidget {
   const OrderMenuItems({
     Key? key,
-    @required this.imgSrc,
-    @required this.label,
-    @required this.price,
-    @required this.count,
+    required this.imgSrc,
+    required this.label,
+    required this.price,
+    required this.count,
   }) : super(key: key);
   final imgSrc;
   final label;
@@ -160,7 +165,7 @@ class OrderMenuItems extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Image(image: AssetImage(imgSrc), height: 80),
           SizedBox(
@@ -184,10 +189,13 @@ class OrderMenuItems extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: defaultPadding * 3),
+          Spacer(),
           Text(
             price,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ],
       ),

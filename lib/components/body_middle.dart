@@ -28,10 +28,10 @@ class BodyMiddle extends StatelessWidget {
           ),
           MenuCategorieTitile(),
           SizedBox(
-            height: defaultPadding * 2,
+            height: defaultPadding,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               CategorieItems(
                 imgSrc: 'images/pizza.png',
@@ -78,7 +78,7 @@ class BodyMiddle extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: defaultPadding * 4,
+            height: defaultPadding * 6,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -98,8 +98,13 @@ class BodyMiddle extends StatelessWidget {
                 price: '\$7.5',
                 imgSrc: 'images/pizza_img3.png',
               ),
+              MoreItems(
+                label: 'Mushroom Pizza',
+                price: '\$7.49',
+                imgSrc: 'images/pizza_img1.png',
+              ),
             ],
-          )
+          ),
         ],
       )),
     );
@@ -199,7 +204,7 @@ class MoreItems extends StatelessWidget {
                     ),
                     Image(
                       image: AssetImage('images/plus.png'),
-                      height: 30,
+                      height: 25,
                       color: orangeColor,
                     ),
                   ],

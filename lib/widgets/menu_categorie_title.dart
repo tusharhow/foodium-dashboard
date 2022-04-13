@@ -12,7 +12,7 @@ class MenuCategorieTitile extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'Menu Categorie',
+          'Menu Categories',
           style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
         Container(
